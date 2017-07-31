@@ -32,11 +32,3 @@
     - contents: |
         ### managed by salt [tzselect.sls]
         export TZ='{{ tzsetting }}'
-
-#/etc/environment:
-#  augeas.change:
-#    - lens: shellvars_list.lns
-#    - context: /files/etc/environment
-#    - changes:
-#      - set TZ/quote "\'"
-#      - set TZ/value {{ tzsetting }}

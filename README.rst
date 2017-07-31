@@ -1,5 +1,5 @@
 =================
-tzselect-forumula
+tzselect-formula
 =================
 
 
@@ -12,7 +12,7 @@ Set a pillar with the timezone, as shown in pillar.example.  Several files are c
 Instructions
 ------------
 
-This formula is intended for virtualization environments or others which low-CPU cycles.  You can read about challenges with the gettimeofday systemcall here: https://blog.packagecloud.io/eng/2017/03/08/system-calls-are-much-slower-on-ec2/
+This formula is intended for virtualization environments or where you need to reduce context swithes. You can read about challenges with the gettimeofday systemcall here: https://blog.packagecloud.io/eng/2017/03/08/system-calls-are-much-slower-on-ec2/
 
 You can discover your own preferred timezone string via `tzselect` which is available in nearly every distribution of Linux.  (addt'l ref: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones )
 
